@@ -1,0 +1,249 @@
+
+body { /* reset browser defaults */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: gray;
+}
+
+.page-section { /* make every webpage section be the size of browser window. */
+    height: 100%;
+    width: 100%;
+    
+}
+div { /* reset default style */
+    margin: 0;
+    padding: 0;
+}
+.welcome-page { /* load background image */
+    background-image: url("../imgs/first.jpg"); 
+    background-size: contain;
+    background-repeat: repeat;
+}
+#welcome-text-container { /* create background of welcome message */
+    margin-top: 50vh;
+    display: inline-block;
+    padding: 2%;
+    padding-right: 5%;
+    background-color: white;
+    text-align: center;
+}
+#welcome-text {
+    /* reset default style of text */
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ------------- navigation bar ------------- */
+nav ul li{  /* align elements of top of each other */
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+} 
+nav ul li:hover, #welcome-text-container:hover { /* create left border when navigation bar is hovered */
+    border-left: 5px solid rgb(255, 87, 34);
+}
+nav ul {
+    /* reset default style of text */
+    margin: 0;
+    padding: 0;
+}
+a { /* style the email contact link */
+    margin-top: 100px;
+    text-decoration: none;
+    color: black;
+    padding-top: 3px;
+
+}
+nav { /* navigation bar background be white and on right of screen */
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    position: fixed;
+    width: 50px;
+    background-color: white;
+    border-top: none;
+    padding-top: 4px;
+    margin-left: calc(100vw - 60px);
+    margin-top: 25vh;
+    z-index: 1;
+    box-shadow: -2px 0 2px black;
+
+}
+
+.material-icons { /* color all webpage icons gray */
+    color: black;
+    opacity: .50;
+}
+
+p, li {  /* double space all text */
+    padding: auto;
+    
+    line-height: 2;
+    margin: 0 10px;
+    
+}
+
+img { /* create images as a column of two images */
+    height: 50%;
+    width: 50%;
+    float: left;
+    
+}
+
+.column { /* create a column layout */
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.column-right { /* move column to right and make card look */
+    float: right;
+    transform: translate(-50px);
+    box-shadow: -7px 0px 10px black, 7px 0px 10px black;
+    
+}
+.column-left { /* move column to the left and make card look */
+    float: left;
+    transform: translate(.5px); /* make column be on top of image*/
+    box-shadow: 10px 0px 10px black, 0 -5px 10px black;
+}
+
+#profile-pic-container { /* create a circle that looks like a card for the profile pic image */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px auto; /* center profile pic image */
+    box-shadow: -2px 0 2px black, 2px 0 2px black, 0 -2px 2px black, 0 2px 2px black;
+}
+
+#profile-pic { /* center the image */
+   margin: 25% 25%;
+}
+
+.column-heading { /* style all column headings */
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-color: #A3A21C;
+}
+h1 { /* delete blank line below headings text */
+    margin-bottom: 0;
+}
+.column-txt { /* fit column text inside container and style container */
+    background-color: #E6E3DF;
+    color: black;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#accordion-txt-content { /* limit the size of the accordion text section, 100 - 15 size  */
+    height: 85%;
+    width: 100%;
+}
+.proj-text { /* start with hidden text for accordion effect */
+    height: 0;
+    overflow: hidden;
+    border: 1px solid black;
+    border-top: none;
+}
+
+div input[id^="proj"]:checked ~ div { /* display text when checkbox clicked */
+    height: 99%;
+    overflow: auto;
+}
+div input[id^="proj"] {
+    display: none;
+
+}
+
+.column-heading p { /* style the NOTE text in the programming projects section */
+    font-size: 80%;
+    background-color: #A3A21C;
+    width: 100%;
+    margin: 0;
+}
+
+label[for^="proj"] { /* style text for each programming project */
+    background-color: #BEBFB8;
+    display: block;
+    text-align: center;
+    padding: 3%;
+    border-bottom: 1px solid black;
+    border-bottom: none;
+    
+}
+
+#email-link { /* make email link look like a large square button */
+    display: block;
+    background-color: white;
+    padding: 15px 0px;
+    text-align: center;
+    box-shadow: -2px 0 2px black,0 2px 2px black;
+}
+#email-link:hover { /* make email link button look gray when hover */
+    box-shadow: none;
+    background-color: #BEBFB8;
+    transition-duration: 2s;
+}
+.txt { /* avoid the scroll bar covering text */
+    width: 90%;
+}
+.column-sub-heading { 
+    height: 7.5%;
+}
+/* --------------- style table elements with black border -----------------*/
+table,td,th { 
+    border: 1px solid black;
+}
+th {
+    background-color: #BEBFB8;
+}
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+    height: 25%;
+    
+    margin-bottom: 15%;
+}
+
+p::selection, li::selection, h1::selection, td::selection, th::selection, label::selection {
+    background-color: #1ecbe1;
+}
+
+/* single column website layout */
+@media only screen and (max-width: 720px) { 
+    img { 
+        display: none;
+
+    }
+    img[id="profile-pic"] { 
+        display: block;
+    }
+    .column-right, .column-left,.column {
+        width: 100%;
+    }
+    nav {
+        margin:0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .column-right {
+        transform: none;
+    }
+}

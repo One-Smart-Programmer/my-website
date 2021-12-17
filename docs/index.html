@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One-Smart-Programmer's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" value= "maximum-width=device-width, width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <!-- Welcome Page Section Start -->
+        <nav>
+            <ul> 
+                <li> <a href="#about-page-start"><i class="material-icons">account_circle</i></a></li>
+                <li> <a href="#skills-section-start"><i class="material-icons">build</i></a></li>
+                <li> <a href="#prog-proj-section-start"><i class="material-icons">code</i></a></li>
+                <li> <a href="#edu-section-start"><i class="material-icons">home</i></a></li>
+                <li> <a href="#experience-section-start"><i class="material-icons">work_outline</i></a></li>
+                <li> <a href="#contact-section-start"><i class="material-icons">phone</i></a></li>
+            </ul>
+        </nav>
+
+        <div class="page-section welcome-page"> <!-- Welcome Text-->
+            <div id="welcome-text-container">
+                <p id="welcome-text">Welcome To One-Smart-Programmer's Portfolio Website</p>
+            </div>
+            
+        </div>
+
+       <!-- About Me Page Section Start -->
+       <div class="page-section">
+            
+            <div class="column column-txt column-left" id="about-page-start">
+                <div class="column-heading">
+                    <h1 >About Me</h1>
+                </div>
+                <div class="txt">
+                    <p>
+                        Hello, my GitHub name is One-Smart-Programmer! 
+                        I am a Computer Science Major at Arizona State University 
+                        graduating this December 2021 (Fall 2021). My main goal 
+                        after graduation is to become a full-stack web developer.
+                        My hobbies include reading business books, learning new 
+                        programming languages and eating out at new restaurants. 
+                        Also, my favorite programming language is Python, and my 
+                        favorite text editors are VIM and Visual Studio Code.
+
+                    </p>
+                    <p>
+                    <br>
+                    
+                    My favorite books include:
+                    <ul>
+                        <li>The Millionaire Next Door by Thomas J. Stanley</li>
+                        <li>Think and Grow Rich by Napoleon Hill</li>
+                        <li>Rich Dad Poor Dad by Robert Kiyosaki and Sharon Lechter</li>
+                        <li>The Coder’s Apprentice: Learning Programming with Python 3 by Pieter Spronck</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <img src="./imgs/cactus.jpg" alt="cactus image">
+            <img src="./imgs/burger.jpg" alt="burger food image"> 
+            
+        </div>
+
+        <!-- Skills Page Section Start -->
+        <div class="page-section">
+
+            <div class="column column-txt column-right" id="skills-section-start">
+                <div class="column-heading">
+                    <h1>Skills</h1>
+                </div>
+                <div class="txt"> <!-- Skills text -->
+                    <ul>
+                        <li>
+                            Front-End Technologies:
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                        <li>
+                            App Development
+                            <ul>
+                                <li>Swift</li>
+                                <li>Xcode</li>
+                                <li>Model View Controller Architecture (MVC)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Programming Languages
+                            <ul>
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Ruby</li>
+                                <li>Swift</li>
+                                <li>SQL</li>
+                            </ul>
+                        </li>
+
+                        <li>Algorithms</li>
+                        <li>Object Oriented Programming(OOP)</li>
+                        <li>Restful API's (Python, Flask, SQL)</li>
+                        <li>Database Design (SQL)</li>
+                        <li>Python Flask</li>
+                        <li>
+                            Currently Learning
+                            <ul>
+                                <li>JavaScript Framework: React.JS</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <img src="./imgs/laptop.jpg" alt="laptop image">
+            <img src="./imgs/workplace.jpg" alt="office image">
+
+        </div>
+
+        <!-- Programming Projects Page Section Start -->
+        <div class="page-section">
+
+            <div class="column column-txt column-left" id="prog-proj-section-start">
+                <div class="column-heading">
+                    <h1>Programming Projects</h1>
+                    <p>NOTE: click on project name to obtain more info!</p>
+                </div>
+                
+                <div id="accordion-txt-content">
+                    
+
+                    <div id="proj-one-section">
+                        <input type="checkbox" id="proj-one">
+                        <label for="proj-one">Personal Portfolio Page<i class="material-icons">expand_more</i></label>
+
+                        <div class="proj-text">
+                            <p>
+                                This website is made using only HTML and CSS. The
+                                website design was inspired by column layout, in which
+                                the website content sections are inside columns, made
+                                with &lt;div&gt;, that are each 50% of the device screen size.
+                                The code may be found on GitHub.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id="proj-two-section">
+                        <input type="checkbox" id="proj-two">
+                        <label for="proj-two">Text Formatter</label>
+
+                        <div class="proj-text">
+                            <p>
+                                This application used Java and WindowBuilder GUI design tool.
+                                This application would first read a text file with predefined text commands
+                                and create a new text file formatted with the commands given in the input file.
+                            </p>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="proj-three-section">
+                        <input type="checkbox" id="proj-three">
+                        <label for="proj-three">iOS Mobile Application: A Recipe Notebook</label>
+
+                        <div class="proj-text">
+                            <p>
+                                This application is a simple application that contains two 
+                                main features: a grocery list and recipe notebook. The application 
+                                uses MVC architecture.
+                                 
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                    <div id="proj-four-section">
+                        <input type="checkbox" id="proj-four">
+                        <label for="proj-four">iOS Game Application: Space Ship Asteroid Game</label>
+
+                        <div class="proj-text">
+                            <p>
+                                This application was a video game made with swift. 
+                                The game is very simple to play, a spaceship drives through
+                                asteroids. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="proj-five-section">
+                        <input type="checkbox" id="proj-five">
+                        <label for="proj-five">Restaurant Management Database API</label>
+
+                        <div class="proj-text">
+                            <p>
+                                This application was a simple CREATE, READ, UPDATE, DELETE 
+                                database application/API. In which SQL was used to create
+                                a database and SQL queries combined with Python (Flask and psycopg2) were used to create a REST API.
+                                This application also has a very simple front-end 
+                                using HTML, CSS, JavaScript and React.JS (JavaScript Framework).
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <img src="./imgs/computer.jpg" alt="computer image">
+            <img src="./imgs/desk.jpg" alt="desk image">
+
+        </div>
+        
+        <!-- Education/Experience Page Section Start -->
+        <div class="page-section">
+
+            <div class="column column-txt column-right"><!--Education page section start-->
+                <div class="column-heading column-sub-heading" id="edu-section-start"> 
+                    <h1>Education</h1>
+                </div>
+                <table>
+                    <tr>
+                        <th>School</th>
+                        <th>Degree</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Arizona State University</td>
+                        <td>Bachelor of Science in Computer Science</td>
+                        <td>December 2021</td>
+                    </tr>
+                </table>
+
+                <div class="column-heading column-sub-heading" id="experience-section-start">
+                    <h1>Experience</h1><!-- Experience page section start -->
+                </div>
+                <ul>
+                    <li>
+                        Circle K - Customer Service Representative
+                        <ul>
+                            <li>Have experience working First, Second, and Third work shifts. Skills include:</li>
+                            <ul>
+                                <li>
+                                    Bilingual customer service. I speak Spanish and English.
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <img src="./imgs/books.jpg" alt="books image">
+            <img src="./imgs/desk-and-coffee.jpg" alt="desk and coffee image">
+
+        </div>
+
+        <!-- Contact Page Section Start -->
+        <div class="page-section">
+
+            <div class="column column-txt column-left" id="contact-section-start">
+                <div class="column-heading">
+                    <h1>Thank You</h1>
+                </div>
+                
+                <div id="profile-pic-container">
+                    <img id="profile-pic" src="./imgs/profile-pic.png" alt="drawing of happy face">
+                </div>
+                <br>
+                <br>
+                <br>
+                <p style="text-align: center;font-weight: bolder;font-size: 20px;">
+                   ! Thank You for looking at my website !   
+                </p>
+            </div>
+
+            
+
+            <img src="./imgs/phone.jpg" alt="phone image" >
+            <img src="./imgs/thank-you.jpg" alt="thank you sign image" >
+
+        </div>
+    </body>
+</html>
